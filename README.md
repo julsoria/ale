@@ -167,5 +167,5 @@ If you use this code in your research, please cite our paper:
 ***
 ## ⚖️ License
 
-This project is licensed under the ... License - see the LICENSE file for details.
+This project is licensed under the LGPLv2 License - see the [LICENSE](LICENSE) file for details.
 
