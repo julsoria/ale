@@ -1,0 +1,9 @@
+# Environment from README
+# Python: 3.10.13
+# PyTorch: 2.1.2
+# Torchvision: 0.16.2
+
+torch==2.1.2
+torchvision==0.16.2
+cabrnet==1.0
+psutil
