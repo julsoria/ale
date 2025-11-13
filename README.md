@@ -11,14 +11,19 @@ This project is tested under the following environment setting:
 - Python: 3.10.13
 - PyTorch: 2.1.2
 - Torchvision: 0.16.2
-- CaBRNet: 1.0
+- CaBRNet: 1.1
 
 From a clean environment, running this should be enough to guarantee a reproductible setting:
 
-```bash
+<!-- ```bash
 pip install cabrnet  # includes all other requirements
 pip install psutil  # for memory tracking
-``` 
+```  -->
+
+```bash
+pip install -r requirements.txt
+```
+
 
 
 ## Installation and Downloads
