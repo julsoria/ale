@@ -5,9 +5,7 @@ import torch
 import logging
 import psutil
 from utils import load_model, check_memory_usage
-from subset_minimal_axp_base import FormalExplanationBase
-from subset_minimal_axp_topk import TopKFormalExplanation
-from subset_minimal_axp_spatial import SpatialFormalExplanation
+from ale_methods import FormalExplanationBase, TopKFormalExplanation, SpatialFormalExplanation
 from tqdm import tqdm, trange
 import time
 CWD = Path(os.getcwd())

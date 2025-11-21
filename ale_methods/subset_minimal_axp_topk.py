@@ -2,7 +2,7 @@ import torch
 
 from tqdm import tqdm
 
-from subset_minimal_axp_base import FormalExplanationBase
+from .subset_minimal_axp_base import FormalExplanationBase
 from utils import check_memory_usage
 
 

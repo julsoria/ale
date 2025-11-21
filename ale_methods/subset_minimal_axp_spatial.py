@@ -9,7 +9,7 @@ import torch.nn as nn
 # import torchinfos
 from tqdm import tqdm
 
-from subset_minimal_axp_base import FormalExplanationBase
+from .subset_minimal_axp_base import FormalExplanationBase
 from utils import check_memory_usage, load_model
 
 
@@ -814,78 +814,3 @@ class SpatialFormalExplanation(FormalExplanationBase):
 ###############################################################################
 
 ###############################################################################
-
-
-def main(top_k: bool = True, triangle: bool = False, hypersphere: bool = False):
-    # print("Inspecting the class...")
-    # _inspect_class(FormalExplanationBase)
-    # sys.exit()
-    print("Starting the explanation process...")
-    # load the model
-
-    seed = 1  # 1338
-
-    # print("Loading configuration...")
-    # Current working directory
-    cwd = Path(os.getcwd())
-    # print("Current working directory:", cwd)
-    # Path to the trained model
-    # final_model_path = cwd / "logs" / f"protopnet_cub200_{seed}" / "final" 
-    final_model_path = cwd / "logs" / "vgg_1" / "final"
-    prototype_path = final_model_path / "prototypes.pth"
-    device = "cuda:0" if torch.cuda.is_available() else "cpu"
-
-    model, test_loader = load_model(final_model_path, seed=seed, device=device, test_set=True)
-    # test_loader = dataloaders["test_set"]
-
-    # get a sample image
-    batch_size = 1  # 16
-    test_loader = torch.utils.data.DataLoader(test_loader.dataset, batch_size=batch_size, shuffle=False)
-    
-    save_path = cwd / "images"
-    # verif_counter = 0
-    print("Starting verification...")
-    print("Number of samples: ", len(test_loader))
-    MAX_PROTOTYPES = 2_000
-    data = []
-    correct_data = []
-    incorrect_data = []
-    interesting_data = []
-    # MAX_ITER = -1  # set to -1 to run on all samples, 0 to ignore
-    MAX_ITER = 1
-    
-    for i, (x, y) in enumerate(test_loader):
-        if i >= MAX_ITER > 0:
-            break
-        x = x.to(device)
-        y = y.to(device)
-        # print(f"Input shape: {x.shape}, Label shape: {y.shape}")
-        # print(f"Input: {x}, Label: {y}")
-        # print(f"Input: {x[0,0,0,0]}, Label: {y[0]}")
-        # print(f"Input: {x[0,0,0,:]}, Label: {y[0]}")
-        
-        if top_k:
-            explanation = TopKFormalExplanation(model, device=device)
-            explanation.explain_one(x, y)
-        elif triangle:
-            explanation = SpatialFormalExplanation(model, device=device, paradigm="triangle", save_proto=True, load_proto=False, prototype_filepath=prototype_path)
-            explanation.explain_one(x, y, verbose=True)
-        elif hypersphere:
-            explanation = SpatialFormalExplanation(model, device=device, paradigm="hypersphere", save_proto=True, load_proto=False, prototype_filepath=prototype_path)
-            explanation.explain_one(x, y, verbose=True)
-        else:
-            raise ValueError("At least one of top_k, triangle, or hypersphere must be True.")
-
-        data.append(explanation.explanation)
-        if explanation.c == y.item():
-            correct_data.append(explanation.explanation)
-        else:
-            incorrect_data.append(explanation.explanation)
-
-
-if __name__ == "__main__":
-    print("Entering main...")
-    # load the model
-    args = parse_args()
-    main(args.top_k, args.triangle, args.hypersphere)
-    # main(0, 0, 1)  # For testing purposes, run with triangle inequality only
