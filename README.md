@@ -22,7 +22,7 @@
 [Romain Xu-Darme](https://scholar.google.com/citations?user=QB4YkI0AAAAJ), 
 [Daniela Cancila](https://scholar.google.com/citations?user=ucNJ23sAAAAJ)
 
-<small>✉️ Corresponding Author: firstname.lastname [at] cea [dot] fr</small>
+<small>✉️ Corresponding Author: jules.soria [at] cea [dot] fr</small>
 
 </div>
 
