@@ -3,7 +3,7 @@
 # Formal Abductive Explanations for Prototype-Based Networks
 
 [![Conference](https://img.shields.io/badge/AAAI-26-blue)](https://aaai.org/conference/aaai/aaai-26/)
-[![arXiv](https://img.shields.io/badge/arXiv-1234.56789-b31b1b.svg?logo=arxiv)](https://arxiv.org/abs/2511.16588)
+[![arXiv](https://img.shields.io/badge/arXiv-2511.16588-b31b1b.svg?logo=arxiv)](https://arxiv.org/abs/2511.16588)
 [![Zenodo](https://img.shields.io/badge/Zenodo-10.5281%2Fzenodo.16707325-blue)](https://zenodo.org/records/16707325)
 [![License](https://img.shields.io/badge/License-LGPL_v2.1-blue.svg)](LICENSE)
 
