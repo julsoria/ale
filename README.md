@@ -186,13 +186,18 @@ If you use this code in your research, please cite our paper:
 
 
 **BibTeX:**
-```bibtex
+
+<!-- ```bibtex
 @inproceedings{soria2026formal,
   title     = {Formal Abductive Explanations for Prototype-Based Networks},
   author    = {Soria, Jules and Chihani, Zakaria and Girard-Satabin, Julien and Grastien, Alban and Xu-Darme, Romain and Cancila, Daniela},
   booktitle = {Proceedings of the AAAI Conference on Artificial Intelligence},
   year      = {2026}
 }
+``` -->
+
+```bibtex
+Coming soon !
 ```
 
 ***
