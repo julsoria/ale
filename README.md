@@ -1,11 +1,17 @@
+<div align="center">
+
 # Formal Abductive Explanations for Prototype-Based Networks
 
 [![Conference](https://img.shields.io/badge/AAAI-26-blue)](https://aaai.org/conference/aaai/aaai-26/)
+[![arXiv](https://img.shields.io/badge/arXiv-1234.56789-b31b1b.svg?logo=arxiv)](https://arxiv.org/abs/2511.16588)
+[![Zenodo](https://img.shields.io/badge/Zenodo-10.5281%2Fzenodo.16707325-blue)](https://zenodo.org/records/16707325)
 [![License](https://img.shields.io/badge/License-LGPL_v2.1-blue.svg)](LICENSE)
 
-**Accepted at AAAI-26 (Main Paper Track)** 🎉
+<br>
 
----
+🎉 **Accepted at AAAI-26 (Main Technical Track)** 🎉
+
+</br>
 
 ### Authors
 
@@ -17,6 +23,8 @@
 [Daniela Cancila](https://scholar.google.com/citations?user=ucNJ23sAAAAJ)
 
 <small>✉️ Corresponding Author: firstname.lastname [at] cea [dot] fr</small>
+
+</div>
 
 ---
 
