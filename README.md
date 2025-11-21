@@ -1,6 +1,24 @@
 # Formal Abductive Explanations for Prototype-Based Networks
 
-Accepted at AAAI26 for the Main Paper Track !
+[![Conference](https://img.shields.io/badge/AAAI-26-blue)](https://aaai.org/)
+[![License](https://img.shields.io/badge/License-LGPL_v2.1-blue.svg)](LICENSE)
+
+**Accepted at AAAI-26 (Main Paper Track)** 🎉
+
+---
+
+### Authors
+
+[**Jules Soria**](https://scholar.google.com/citations?user=1Qctec0AAAAJ) ✉️, 
+[Zakaria Chihani](https://scholar.google.com/citations?user=mgzCh30AAAAJ), 
+[Julien Girard-Satabin](https://scholar.google.com/citations?user=erWN5TwAAAAJ), 
+[Alban Grastien](https://scholar.google.com/citations?user=87u0x6UAAAAJ), 
+[Romain Xu-Darme](https://scholar.google.com/citations?user=QB4YkI0AAAAJ), 
+[Daniela Cancila](https://scholar.google.com/citations?user=ucNJ23sAAAAJ)
+
+<small>✉️ Corresponding Author</small>
+
+---
 
 ## Environment settings
 
@@ -172,5 +190,5 @@ If you use this code in your research, please cite our paper:
 ***
 ## ⚖️ License
 
-This project is licensed under the LGPLv2 License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the **GNU Lesser General Public License v2.1** - see the [LICENSE](LICENSE) file for details.
 
