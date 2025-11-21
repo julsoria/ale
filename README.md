@@ -1,6 +1,6 @@
 # Formal Abductive Explanations for Prototype-Based Networks
 
-[![Conference](https://img.shields.io/badge/AAAI-26-blue)](https://aaai.org/)
+[![Conference](https://img.shields.io/badge/AAAI-26-blue)](https://aaai.org/conference/aaai/aaai-26/)
 [![License](https://img.shields.io/badge/License-LGPL_v2.1-blue.svg)](LICENSE)
 
 **Accepted at AAAI-26 (Main Paper Track)** 🎉
